@@ -23,8 +23,8 @@
 .subTitle{
     font-weight: bold;
     font-size: 2.88rem;
-    color: #000;
     line-height: 3.56rem;
+    color: #000;
 }
 
 .p{
@@ -158,10 +158,55 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
 .heroLeft p{
     margin: 1.50rem 0;
+}
+
+/* curriculum section styles */
+.curriculumBg{
+    text-align: center;
+    padding: 3.75rem 0;
+    background-image: url("../assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cards{
+    margin-top: 3rem;
+    display: flex;
+    gap: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 367px;
+    border: 1px solid #d8eff9;
+    padding: 2.75rem;
+    border-radius: 18.86px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-image: linear-gradient(#e0f3fa, #fff);
+}
+
+.card2{
+    background-image: linear-gradient(#fbf2de, #fff);
+    border: 1px solid #fbf2de;
+}
+
+.card3{
+    background-image: linear-gradient(#ede2fb, #fff);
+    border: 1px solid #ede2fb;
+}
+
+.card img{
+    width: 70%;
+    margin: 0 auto 0 auto;
 }
 
 
@@ -212,6 +257,13 @@ nav{
     .heroLeft{
         text-align: center;
         margin-top: 1rem;
+    }
+    .cards{
+        flex-wrap: wrap;
+    }
+    .subTitle{
+        font-size: 1.88rem;
+    line-height: 2.56rem;
     }
 }
 
