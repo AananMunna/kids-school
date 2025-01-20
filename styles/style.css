@@ -209,6 +209,106 @@ nav{
     margin: 0 auto 0 auto;
 }
 
+.navigationMenu{
+    margin-top: 4rem;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigationMenu i{
+    font-size: 2rem;
+    background-color: orange;
+    color: white;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+/* stories section styles */
+.stories{
+    text-align: center;
+    padding: 3.75rem 0;
+    background-image: linear-gradient(#fff, #f9e0b2);
+}
+
+.storiesCards{
+    background-image: url("../assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.storiesCard{
+    width: 540.27px;
+    border-radius: 16px;
+    background: white;
+    text-align: start;
+}
+
+.desc{
+    padding: 30px;
+    position: relative;
+}
+
+.desc>div{
+    margin:30px 0;
+}
+.desc>button{
+    border-radius: 48px;
+    padding: 15px 25px;
+    background: #13d3e0;
+    position: absolute;
+    top: -34px;
+}
+
+.storiesCard img{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.storiesCardRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.storiesCardRight .storiesCard{
+    width: 290px;
+}
+
+.small{
+    font-size: 15.34px;
+    line-height: 28.8px;
+    margin: 0 !important;
+}
+
+.smallBtn{
+    background: #95b226 !important;
+    padding: 10px 20px !important;
+    font-size: 15px;
+    top: -24px !important;
+}
+
+.storiesRightSmall{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.storiesRightSmall .desc{
+    padding: 26px;
+}
+
+.violetColor{
+    background: #5d58f0 !important;
+}
 
 
 
@@ -234,6 +334,9 @@ nav{
     }
     .p{
         font-size: 1rem;
+    }
+    .storiesCards{
+        flex-direction: column;
     }
 }
 
@@ -265,8 +368,40 @@ nav{
         font-size: 1.88rem;
     line-height: 2.56rem;
     }
+    .navigationMenu{
+        display: none;
+    }
+    .storiesCardLeft{
+        display: none;
+    }
 }
 
+@media (max-width:650px) {
+    .storiesCard{
+        width: 100% !important;
+        height: auto;
+    }
+    .storiesCard img{
+        width: 100% !important;
+    }
+    .storiesRightSmall{
+        padding: 0 10px;
+        gap: 10px;
+    }
+    .storiesCardRight{
+        gap: 10px;
+    }
+    .desc button{
+        font-size: 10px;
+    }
+    .desc{
+        padding: 30px 10px !important;
+    }
+    .small{
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
 
 
         /* For smaller screens (up to 576px) */
