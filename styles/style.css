@@ -176,29 +176,6 @@ nav{
 
 
 
-
-@media(max-width: 992px) {
-    .navLinks, .contact , .logo>h4{
-        display: none;
-    }
-    .menu{
-        display: block;
-    }
-    header{
-        border: 1px solid #fea301;
-    }
-    .logo>img{
-        width: 80%;
-    }
-    .hero{
-        flex-direction: column-reverse;
-    }
-    .heroLeft{
-        text-align: center;
-        margin-top: 1rem;
-    }
-}
-
 @media(max-width: 1200px) {
     .hero{
         margin-top: 3.13rem;
@@ -215,11 +192,39 @@ nav{
     }
 }
 
+@media(max-width: 992px) {
+    .navLinks, .contact , .logo>h4{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    header{
+        border: 1px solid #fea301;
+    }
+    .logo>img{
+        width: 80%;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        margin-top: 2rem;
+    }
+    .heroLeft{
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+
+
 
         /* For smaller screens (up to 576px) */
         @media (max-width: 576px) {
             .container {
                 max-width: 100%;
+            }
+            .heroLeft>h2{
+                font-size: 2rem;
+                line-height: 2.31rem;
             }
         }
 
