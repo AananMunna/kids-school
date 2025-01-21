@@ -9,7 +9,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Quicksand", serif;
-    /* font-family: "Raleway", serif; */
 }
 
 /* shared styles */
@@ -479,11 +478,6 @@ footer{
 
 
 
-
-
-
-
-
 @media(max-width: 1200px) {
     .hero{
         margin-top: 3.13rem;
@@ -587,7 +581,6 @@ footer{
 }
 
 
-        /* For smaller screens (up to 576px) */
         @media (max-width: 576px) {
             .container {
                 max-width: 100%;
@@ -598,14 +591,12 @@ footer{
             }
         }
 
-        /* For medium screens (576px to 768px) */
         @media (min-width: 576px) and (max-width: 768px) {
             .container {
                 max-width: 540px;
             }
         }
 
-        /* For larger screens (768px to 992px) */
         @media (min-width: 768px) and (max-width: 992px) {
             .container {
                 max-width: 720px;
@@ -613,14 +604,12 @@ footer{
         }
 
 
-        /* For very large screens (992px to 1200px) */
         @media (min-width: 992px) and (max-width: 1200px) {
             .container {
                 max-width: 960px;
             }
         }
 
-        /* For very large screens (larger than 1200px) */
         @media (min-width: 1200px) {
             .container {
                 max-width: 1140px;
