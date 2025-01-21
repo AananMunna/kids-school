@@ -45,6 +45,7 @@
 
 .btn:hover{
     background: #05D4DF;
+    transform: scale(105%);
 }
 
 .cardTitle{
@@ -79,6 +80,12 @@
 
 a{
     text-decoration: none;
+    transition: all .5s;
+    display: inline-block;
+}
+a:hover, a:focus{
+    text-decoration: underline;
+    transform: translateY(-3px);
 }
 
 li{
@@ -165,13 +172,26 @@ nav{
     margin: 1.50rem 0;
 }
 
+.heroImg{
+    animation: heroImg 2s infinite ease-in-out;
+}
+
+@keyframes heroImg {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at the original position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move up by 10px */
+    }
+}
+
 /* curriculum section styles */
 .curriculumBg{
     text-align: center;
     padding: 3.75rem 0;
     background-image: url("../assets/bg.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .cards{
@@ -225,24 +245,33 @@ nav{
     font-weight: bold;
     border-radius: 100%;
     cursor: pointer;
+    transition: all .5s;
+}
+
+.navigationMenu i:hover{
+    background: #01acfd;
+    transform: rotate(360deg);
 }
 
 /* stories section styles */
+.storiesBg{
+
+    background-image: linear-gradient(#fff, #f9e0b2);
+}
 .stories{
     text-align: center;
     padding: 3.75rem 0;
-    background-image: linear-gradient(#fff, #f9e0b2);
+    background-image: url("../assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .storiesCards{
-    background-image: url("../assets/bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: 50px 0;
+    padding: 3.75rem 0;
 }
 
 .storiesCard{
