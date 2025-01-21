@@ -449,7 +449,7 @@ footer{
         display: block;
     }
     header{
-        border: 1px solid #fea301;
+        border-bottom: 1px solid #fea301;
     }
     .logo>img{
         width: 80%;
