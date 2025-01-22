@@ -185,6 +185,11 @@ nav{
 }
 
 /* curriculum section styles */
+marquee p{
+    font-size: 20px ;
+    margin-top: 10px;
+}
+
 .curriculumBg{
     text-align: center;
     padding: 3.75rem 0;
